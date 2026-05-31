@@ -23,7 +23,7 @@ def generate_inventory(output_path: str = "data/inventory.csv", rows: int = 1000
                 fake.date_between(start_date="-3y", end_date="today"),
             ])
 
-    print(f"✅ Inventario generado: {output_path} ({rows} filas)")
+    print(f" Inventario generado: {output_path} ({rows} filas)")
 
 if __name__ == "__main__":
     generate_inventory()
