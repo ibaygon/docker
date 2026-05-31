@@ -22,7 +22,7 @@ def generate_excel_report(df_vulnerable: pd.DataFrame, output_path: str | None =
         df_vulnerable.to_excel(writer, sheet_name="Vulnerables", index=False)
         group_by_department(df_vulnerable).to_excel(writer, sheet_name="Por Departamento", index=False)
 
-    print(f"✅ Reporte generado: {output_path}")
+    print(f" Reporte generado: {output_path}")
 
 if __name__ == "__main__":
     df = load_inventory()
